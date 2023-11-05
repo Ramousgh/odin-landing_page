@@ -1,13 +1,14 @@
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 li{
     list-style-type: none;
 }
 a{
-    text-decoration: none;
-    color: #ffffff;   
+    text-decoration: none;  
 }
 /* images styling */
 .hero-image{
@@ -17,29 +18,121 @@ a{
 .image-text img{
     width: 8rem;
     height: 8rem;
-    border: solid #3882e6;
+    border: none #3882e6;
     border-radius: 10px;
 }
-
-
-
-
-
-
-header{
-    background-color: #1f2937;
+/* button styling */
+button{
+    background-color:#3882f6;
     color: #ffffff;
+    width: 9em;
+    height: 3em;
+    padding-inline: 0.7em;
+    padding-block: 0.35;
+    border-style: none;
+    border-radius: 5px;
+}
+.container-3 button{
+    border: #ffffff 2px solid;
 }
 
+/* header styling */
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-inline: 100px;
+    padding-block-start: 10px;
+    padding-block-end: 70px;
+    background-color: #1f2937;
+}
+.hero-menu{
+    display: flex;
+   justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+    gap: 1.5em;
+}
+.hero-container{
+    display: flex;
+}
+.texts-button h1{
+    font: normal 900 48px;
+    color: #f9faf8;
+    width:70%;  
+}
+.hero-container{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 15px;
+}
+.texts-button{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 60%;   
+}
+.hero-menu h1{
+    font-size: 24px;
+    color: #f9faf8;
+}
+a, .texts-button p{
+    color: #e5e7eb;
+    font: normal 18px;
+}
+/* section 1 styling */
+.container-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 30px;
+}
+.container-1 ul{
+    display: flex;
+    padding-inline: 150px;
+    padding-block-end: 100px;
+    padding-block-start: 30px;
+    gap: 3rem;
+}
+.container-1 h2{
+    color: #1f2937;
+    font: 900 36px;
+}
+.image-text{
+    width: 8rem;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;  
+}
+.image-text p{
+    text-align: center;
+}
+
+/* section 2 styling */
 .container-2{
-    padding-inline: 160px;
+    padding-inline: 200px;
     padding-block: 70px;
     background-color: #e5e7eb;
 }
+.container-2 p{
+    color: #1f2937;
+    font-style: italic;
+    font-size: 26px;
+    text-align: center;
+}
+.container-2 h2{
+    text-align: end;
+}
+/* section 3 styling; call to action */
+
 .container-3{
-    margin: 40px;
-    padding-block: 30px;
-    padding-inline: 100px;
+    display: flex;
+    gap: 5rem;
+    margin-inline: 100px;
+    margin-block: 100px;
+    padding-block: 40px;
+    padding-inline: 90px;
     background-color: #3882f6;
     color: #ffffff;
     border-radius: 5px;
@@ -47,6 +140,8 @@ header{
 
 
 footer{
+    text-align: center;
+    padding-block: 2rem;
     background-color: #1f2937;
     color: #ffffff;
 }
